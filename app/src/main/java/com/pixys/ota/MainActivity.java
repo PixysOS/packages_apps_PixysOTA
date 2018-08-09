@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota;
+package com.pixys.ota;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.nitrogen.ota.configs.LinkConfig;
-import com.nitrogen.ota.dialogs.WaitDialogFragment;
-import com.nitrogen.ota.fragments.NitrogenOTAFragment;
+import com.pixys.ota.configs.LinkConfig;
+import com.pixys.ota.dialogs.WaitDialogFragment;
+import com.pixys.ota.fragments.PixysOTAFragment;
 
 public class MainActivity extends PreferenceActivity implements
         WaitDialogFragment.OTADialogListener, LinkConfig.LinkConfigListener {
 
-    private static final String FRAGMENT_TAG = NitrogenOTAFragment.class.getName();
-    private NitrogenOTAFragment mFragment;
+    private static final String FRAGMENT_TAG = PixysOTAFragment.class.getName();
+    private PixysOTAFragment mFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mFragment = (NitrogenOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
+        mFragment = (PixysOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
         if (mFragment == null) {
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new NitrogenOTAFragment(), FRAGMENT_TAG)
+                    .replace(android.R.id.content, new PixysOTAFragment(), FRAGMENT_TAG)
                     .commit();
         }
 

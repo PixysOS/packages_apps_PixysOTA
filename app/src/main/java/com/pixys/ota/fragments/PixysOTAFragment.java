@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.fragments;
+package com.pixys.ota.fragments;
 
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -25,18 +25,18 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 
-import com.nitrogen.ota.R;
-import com.nitrogen.ota.configs.AppConfig;
-import com.nitrogen.ota.configs.LinkConfig;
-import com.nitrogen.ota.configs.OTAVersion;
-import com.nitrogen.ota.dialogs.WaitDialogFragment;
-import com.nitrogen.ota.tasks.CheckUpdateTask;
-import com.nitrogen.ota.utils.OTAUtils;
-import com.nitrogen.ota.xml.OTALink;
+import com.pixys.ota.R;
+import com.pixys.ota.configs.AppConfig;
+import com.pixys.ota.configs.LinkConfig;
+import com.pixys.ota.configs.OTAVersion;
+import com.pixys.ota.dialogs.WaitDialogFragment;
+import com.pixys.ota.tasks.CheckUpdateTask;
+import com.pixys.ota.utils.OTAUtils;
+import com.pixys.ota.xml.OTALink;
 
 import java.util.List;
 
-public class NitrogenOTAFragment extends PreferenceFragment implements
+public class PixysOTAFragment extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener,
         SharedPreferences.OnSharedPreferenceChangeListener ,
         WaitDialogFragment.OTADialogListener,
@@ -59,7 +59,7 @@ public class NitrogenOTAFragment extends PreferenceFragment implements
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
 
-        addPreferencesFromResource(R.xml.nitrogen_ota);
+        addPreferencesFromResource(R.xml.pixys_ota);
 
         mRomInfo = (PreferenceScreen) getPreferenceScreen().findPreference(KEY_ROM_INFO);
         mCheckUpdate = (PreferenceScreen) getPreferenceScreen().findPreference(KEY_CHECK_UPDATE);

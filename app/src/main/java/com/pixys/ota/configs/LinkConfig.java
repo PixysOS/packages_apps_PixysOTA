@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.configs;
+package com.pixys.ota.configs;
 
 import android.content.Context;
 
-import com.nitrogen.ota.xml.OTALink;
-import com.nitrogen.ota.xml.OTAParser;
-import com.nitrogen.ota.utils.OTAUtils;
+import com.pixys.ota.xml.OTALink;
+import com.pixys.ota.xml.OTAParser;
+import com.pixys.ota.utils.OTAUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

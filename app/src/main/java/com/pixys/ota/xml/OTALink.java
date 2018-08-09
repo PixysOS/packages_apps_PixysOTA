@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.ota.xml;
+package com.pixys.ota.xml;
 
 public class OTALink {
 

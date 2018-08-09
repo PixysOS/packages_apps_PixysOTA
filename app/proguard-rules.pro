@@ -16,4 +16,4 @@
 #   public *;
 #}
 
--keep class com.nitrogen.ota.core.OTAListener
+-keep class com.pixys.ota.core.OTAListener

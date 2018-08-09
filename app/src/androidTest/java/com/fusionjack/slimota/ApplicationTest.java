@@ -1,4 +1,4 @@
-package com.nitrogen.ota;
+package com.pixys.ota;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
